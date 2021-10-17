@@ -1,0 +1,135 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "mod8")
+  (DATE "Sun Oct 17 13:49:15 2021")
+  (VENDOR "Cadence Design Systems, Inc.")
+  (PROGRAM "Innovus")
+  (VERSION "v16.26-s040_1 ((64bit) 03/14/2018 00:26 (Linux 2.6.18-194.el5))")
+  (DIVIDER /)
+  (VOLTAGE 0.900000::0.900000)
+  (PROCESS "1.000000::1.000000")
+  (TEMPERATURE 125.000000::125.000000)
+  (TIMESCALE 1.0 ns)
+
+  (CELL
+    (CELLTYPE  "mod8")
+    (INSTANCE)
+      (DELAY
+	(ABSOLUTE
+	(INTERCONNECT clk out_reg\[2\]/CK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk out_reg\[1\]/CK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk out_reg\[0\]/CK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT rst g116/NA  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[2\]/Q g116/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[2\]/Q out[2]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[1\]/Q g115/S  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[1\]/Q g114/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[1\]/Q out[1]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[0\]/Q out_reg\[2\]/RB  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[0\]/Q g115/B  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[0\]/Q out[0]  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g114/Z out_reg\[2\]/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[0\]/QB g115/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT out_reg\[0\]/QB out_reg\[0\]/RB  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g115/Z out_reg\[1\]/RB  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g116/Z out_reg\[1\]/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g116/Z g114/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g116/Z out_reg\[0\]/D  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFQZRM2RA")
+    (INSTANCE  out_reg\[2\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CK) Q  (0.250::0.250) (0.304::0.304))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge RB) (posedge CK) (::0.233) (::-0.148))
+	(SETUPHOLD (negedge RB) (posedge CK) (::0.058) (::0.015))
+	(SETUPHOLD (posedge D) (COND ENABLE_RB===1'b1 (posedge CK)) (::0.221) (::-0.136))
+	(SETUPHOLD (negedge D) (COND ENABLE_RB===1'b1 (posedge CK)) (::0.052) (::0.017))
+	(WIDTH (posedge CK) (::0.140))
+	(WIDTH (negedge CK) (::0.284))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFQZRM2RA")
+    (INSTANCE  out_reg\[1\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CK) Q  (0.266::0.266) (0.315::0.315))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge RB) (posedge CK) (::0.254) (::-0.168))
+	(SETUPHOLD (negedge RB) (posedge CK) (::0.080) (::-0.007))
+	(SETUPHOLD (posedge D) (COND ENABLE_RB===1'b1 (posedge CK)) (::0.267) (::-0.182))
+	(SETUPHOLD (negedge D) (COND ENABLE_RB===1'b1 (posedge CK)) (::0.061) (::0.008))
+	(WIDTH (posedge CK) (::0.140))
+	(WIDTH (negedge CK) (::0.284))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "MXB2M1RA")
+    (INSTANCE  g115)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Z  (0.132::0.132) (0.110::0.110))
+	(COND B===1'b1 (IOPATH A Z  (0.132::0.132) (0.110::0.110)))
+	(COND B===1'b0 (IOPATH A Z  (0.132::0.132) (0.110::0.110)))
+	(IOPATH B Z  (0.116::0.116) (0.091::0.091))
+	(COND A===1'b1 (IOPATH B Z  (0.116::0.116) (0.091::0.091)))
+	(COND A===1'b0 (IOPATH B Z  (0.116::0.116) (0.091::0.091)))
+	(IOPATH (posedge S) Z  (0.146::0.146) (0.071::0.071))
+	(IOPATH (negedge S) Z  (0.097::0.097) (0.158::0.158))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "AN2M2R")
+    (INSTANCE  g114)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Z  (0.191::0.191) (0.149::0.149))
+	(IOPATH B Z  (0.155::0.155) (0.146::0.146))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NR2B1M2R")
+    (INSTANCE  g116)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH B Z  (0.134::0.134) (0.053::0.053))
+	(IOPATH NA Z  (0.185::0.185) (0.127::0.127))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFZRM2RA")
+    (INSTANCE  out_reg\[0\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CK) QB  (0.391::0.391) (0.328::0.328))
+	(IOPATH (posedge CK) Q  (0.262::0.262) (0.317::0.317))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge RB) (posedge CK) (::0.168) (::-0.101))
+	(SETUPHOLD (negedge RB) (posedge CK) (::0.088) (::0.011))
+	(SETUPHOLD (posedge D) (COND ENABLE_RB===1'b1 (posedge CK)) (::0.204) (::-0.137))
+	(SETUPHOLD (negedge D) (COND ENABLE_RB===1'b1 (posedge CK)) (::0.084) (::0.004))
+	(WIDTH (posedge CK) (::0.142))
+	(WIDTH (negedge CK) (::0.230))
+      )
+  )
+)
