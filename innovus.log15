@@ -1,0 +1,2573 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v16.26-s040_1, built Wed Mar 14 00:26:06 PDT 2018
+Options:	-execute setLimitedAccessFeature legacy_fects 1 -execute win -init /cad/cadence/digital_ic_design/innovus/etc/innovus/enc.tcl 
+Date:		Sun Oct 17 13:06:30 2021
+Host:		maxwell1 (x86_64 w/Linux 4.9.0-4-amd64) (1core*21cpus*Intel(R) Xeon(R) CPU X5650 @ 2.67GHz 12288KB)
+OS:		Unsupported OS as /etc does not have release info
+
+License:
+		invs	Innovus Implementation System	16.2	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Sourcing startup file /cad/cadence/digital_ic_design/innovus/etc/innovus/enc.tcl
+<CMD> setLayerPreference rve_0 -color green -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_1 -color darkblue -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_2 -color slateblue -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_3 -color turquoise -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_4 -color lightgray -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_5 -color wheat -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_6 -color goldenrod -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_7 -color yellow -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_8 -color sandybrown -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_9 -color coral -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_10 -color red -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_11 -color tomato -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_12 -color firebrick -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_13 -color purple -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_14 -color violet -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> setLayerPreference rve_15 -color tan -isVisible 1 -isSelectable 1 -lineWidth 5 -stipple none
+<CMD> ::getVersion
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+Executing cmd 'win' ...
+<CMD> win
+Sourcing file "/cad/cadence/digital_ic_design/innovus/etc/innovus/enc.tcl" ...
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "VERSION"
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "VERSION"
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "VERSION"
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "VERSION"
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "VERSION"
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file /afs/iitd.ac.in/user/j/jv/jvy197519/LEF_file/trial_gcd.lef
+<CMD> set init_design_settop 0
+<CMD> set init_verilog typical/counter_netlist.v
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+#- Begin Load MMMC data ... (date=10/17 13:10:54, mem=509.2M)
+#- End Load MMMC data ... (date=10/17 13:10:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=56.7M, current mem=509.2M)
+default
+
+Loading LEF file /afs/iitd.ac.in/user/j/jv/jvy197519/LEF_file/trial_gcd.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 400.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTR' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+viaInitial starts at Sun Oct 17 13:10:54 2021
+viaInitial ends at Sun Oct 17 13:10:54 2021
+Loading view definition file from Default.view
+Reading max_timing_library timing library '/afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'AD42M2RA' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ICO' of cell 'AD42M2RA' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.001702)  has a duplicate definition (line '292888') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 292879)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.008867)  has a duplicate definition (line '292906') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 292897)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.001702)  has a duplicate definition (line '292924') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 292915)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.008867)  has a duplicate definition (line '292942') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 292933)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_fall vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.001702)  has a duplicate definition (line '292813') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 292804)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_fall vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.008867)  has a duplicate definition (line '292831') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 292822)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_fall vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.001702)  has a duplicate definition (line '292849') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 292840)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_fall vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.008867)  has a duplicate definition (line '292867') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 292858)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.001702)  has a duplicate definition (line '293463') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 293454)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.008867)  has a duplicate definition (line '293481') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 293472)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.001702)  has a duplicate definition (line '293499') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 293490)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.008867)  has a duplicate definition (line '293517') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 293508)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_fall vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.001702)  has a duplicate definition (line '293388') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 293379)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_fall vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.008867)  has a duplicate definition (line '293406') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 293397)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_fall vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.001702)  has a duplicate definition (line '293424') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 293415)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_fall vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.008867)  has a duplicate definition (line '293442') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 293433)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.001702)  has a duplicate definition (line '294038') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 294029)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.017974) and input_net_transition (0.008867)  has a duplicate definition (line '294056') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 294047)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.001702)  has a duplicate definition (line '294074') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 294065)
+**WARN: (TECHLIB-1365):	The ccsn_last_stage output_voltage_rise vector group for total_output_net_capacitance (0.181120) and input_net_transition (0.008867)  has a duplicate definition (line '294092') on pin 'S' and cell 'AD42M2RA'. The duplicate definition will be ignored. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib, Line 294083)
+Message <TECHLIB-1365> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'AD42M2RA' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'AD42M4RA' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ICO' of cell 'AD42M4RA' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'AD42M4RA' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0' of cell 'ADCSCM2R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1' of cell 'ADCSCM2R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0' of cell 'ADCSCM4R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1' of cell 'ADCSCM4R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0B' of cell 'ADCSIOM2R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1B' of cell 'ADCSIOM2R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0B' of cell 'ADCSIOM4R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1B' of cell 'ADCSIOM4R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0B' of cell 'ADCSOM2R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1B' of cell 'ADCSOM2R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO0B' of cell 'ADCSOM4R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO1B' of cell 'ADCSOM4R' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADFCGCM2RA' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADFCGCM4RA' is not defined in the library. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+**WARN: (TECHLIB-302):	No function defined for cell 'FILEP8R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILEP64R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILEP32R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILEP16R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE8R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE6R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE64R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE4R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE3R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE32R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE16R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTR'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_090c125_wc_ccs.lib)
+Read 1077 cells in library 'uk65lscllmvbbr_090c125_wc' 
+Reading min_timing_library timing library '/afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_110c-40_bc_ccs.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'FILEP8R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_110c-40_bc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILEP64R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_110c-40_bc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILEP32R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_110c-40_bc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILEP16R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_110c-40_bc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE8R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_110c-40_bc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE6R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_110c-40_bc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE64R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_110c-40_bc_ccs.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'FILE4R'. The cell will only be used for analysis. (File /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs/uk65lscllmvbbr_110c-40_bc_ccs.lib)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 1077 cells in library 'uk65lscllmvbbr_110c-40_bc' 
+*** End library_loading (cpu=1.06min, real=1.02min, mem=426.3M, fe_cpu=2.27min, fe_real=5.42min, fe_mem=950.2M) ***
+#- Begin Load netlist data ... (date=10/17 13:11:55, mem=950.2M)
+*** Begin netlist parsing (mem=950.2M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4M8RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4M8RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4M4RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4M4RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4M2RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4M2RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4M1RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4M1RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3M8RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3M8RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3M6RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3M6RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3M4RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3M4RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3M2RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3M2RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3M1RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3M1RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3M0RA' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3M0RA' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 1077 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'typical/counter_netlist.v'
+
+*** Memory Usage v#1 (Current mem = 950.230M, initial mem = 176.438M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=950.2M) ***
+#- End Load netlist data ... (date=10/17 13:11:55, total cpu=0:00:00.1, real=0:00:01.0, peak res=242.1M, current mem=950.2M)
+Top level cell is mod8.
+Hooked 2154 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell mod8 ...
+*** Netlist is unique.
+** info: there are 2166 modules.
+** info: there are 6 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 999.465M, initial mem = 176.438M) ***
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file 'upcounter_8bit.sdc' ...
+Current (total cpu=0:02:19, real=0:05:29, peak res=553.1M, current mem=1114.6M)
+mod8
+INFO (CTE): Constraints read successfully.
+WARNING (CTE-25): Line: 9, 10 of File upcounter_8bit.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=460.6M, current mem=1131.8M)
+Current (total cpu=0:02:19, real=0:05:29, peak res=553.1M, current mem=1131.8M)
+Total number of combinational cells: 668
+Total number of sequential cells: 394
+Total number of tristate cells: 15
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFM10R BUFM12R BUFM14R BUFM16R BUFM18R BUFM22RA BUFM20R BUFM24R BUFM26RA BUFM2R BUFM3R BUFM32RA BUFM40RA BUFM48RA BUFM4R BUFM5R CKBUFM1R BUFM6R BUFM8R CKBUFM12R CKBUFM16R CKBUFM20R CKBUFM22RA CKBUFM24R CKBUFM26RA CKBUFM2R CKBUFM3R CKBUFM32R CKBUFM40R CKBUFM48R CKBUFM4R CKBUFM6R CKBUFM8R
+Total number of usable buffers: 33
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CKINVM1R CKINVM12R CKINVM16R CKINVM20R CKINVM22RA CKINVM24R CKINVM26RA CKINVM2R CKINVM3R CKINVM32R CKINVM40R CKINVM48R CKINVM4R CKINVM6R CKINVM8R INVM1R INVM10R INVM12R INVM14R INVM16R INVM18R INVM20R INVM22RA INVM24R INVM26RA INVM2R INVM3R INVM32R INVM40R INVM48R INVM4R INVM6R INVM5R INVM8R
+Total number of usable inverters: 34
+List of unusable inverters: REGKM2R REGKM1R REGKM4R INVM0R
+Total number of unusable inverters: 4
+List of identified usable delay cells: DEL1M1R DEL1M4R DEL2M1R DEL2M4R DEL3M1R DEL3M4R DEL4M1R DEL4M4R
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+Type 'man IMPEXT-6202' for more detail.
+Reading Capacitance Table File cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl ...
+Cap table was created using Encounter 10.10-b056_1.
+Process name: cln28hpl_1p10m+alrdl_5x2yu2yz_typical.
+Set Shrink Factor to 0.90000
+**WARN: (IMPEXT-2760):	Layer M10 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2760):	Layer M11 specified in the cap table is ignored because it is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA9 specified in the cap table is ignored because its top layer, M10, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via RV specified in the cap table is ignored because its top layer, M11, is greater than the maximum number of layers, 9, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M10 is ignored because the layer is not specified in the technology LEF file.
+#WARNING (NRDB-21) The number of routing layer 9 in the database does not match with the value of 11 in the Extended Cap Table file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_case
+    RC-Corner Name        : default
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : 'cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: 'gpdk045.tch'
+ 
+ Analysis View: best_case
+    RC-Corner Name        : default
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : 'cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: 'gpdk045.tch'
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+WARNING   IMPEXT-2710          1  Basic Cap table for layer M%d is ignored...
+WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+WARNING   IMPVL-159         2154  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+WARNING   TECHLIB-1365        20  The %s vector group for %s has a duplica...
+*** Message Summary: 2222 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -coreMarginsBy die -site CORE -r 1 0.699961 2.6 2.6 2.5 2.5
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CORE -r 0.675 0.691667 2.6 2.6 2.6 2.6
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top .3 bottom .3 left .3 right .3} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.3000  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.3000  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.3000  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.3000  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top 0.16 bottom 0.16 left 0.16 right 0.16} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top 0.16 bottom 0.16 left 0.16 right 0.16} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CORE -r 1 0.691667 2.6 2.6 2.6 2.6
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top 0.16 bottom 0.16 left 0.16 right 0.16} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top 0.16 bottom 0.16 left 0.16 right 0.16} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top 0.16 bottom 0.16 left 0.16 right 0.16} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top 0.4 bottom 0.4 left 0.4 right 0.4} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.4000  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.4000  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top 0.5 bottom 0.5 left 0.4 right 0.4} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CORE -r 0.675 0.691667 3 3 3 3
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top 0.5 bottom 0.5 left 0.4 right 0.4} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+**ERROR: (IMPSYT-6000):	No Object Selected.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: invalid command name "VERSION"
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CORE -r 0.3 0.691667 2.6 2.6 2.6 2.6
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CORE -r 1 0.691667 2.6 2.6 2.6 2.6
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top 0.16 bottom 0.16 left 0.16 right 0.16} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.1600  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top .6 bottom .6 left .6 right .6} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CORE -r 0.675 0.691667 4 4 4 4
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top .6 bottom .6 left .6 right .6} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        4       |       NA       |
+|   VI1  |        8       |        0       |
+|   ME2  |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top ME1 bottom ME1 left ME2 right ME2} -width {top .7 bottom .7 left .7 right .7} -spacing {top .3 bottom .3 left .3 right .3} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-193):	The currently specified top spacing 0.3000  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.3000  might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.3000  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.3000  might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+Ring generation is complete.
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .3 -set_to_set_distance 100 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.3000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.750 1.000 4.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 1 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        1       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .3 -set_to_set_distance 3 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.3000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.750 1.000 4.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 7.750 1.000 7.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 10.750 1.000 10.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 13.750 1.000 13.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.15, 2.30) (4.15, 9.30) because same wire already exists.
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 3 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        3       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .3 -set_to_set_distance 5 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.3000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.750 1.000 4.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 9.750 1.000 9.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 14.750 1.000 14.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.15, 2.30) (4.15, 9.30) because same wire already exists.
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 2 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        2       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .3 -set_to_set_distance 3 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.3000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.750 1.000 4.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 7.750 1.000 7.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 10.750 1.000 10.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 13.750 1.000 13.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.15, 2.30) (4.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (7.15, 2.30) (7.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (10.15, 2.30) (10.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (13.15, 2.30) (13.15, 9.30) because same wire already exists.
+Stripe generation is complete.
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .3 -set_to_set_distance 3 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.3000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.750 1.000 4.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 7.750 1.000 7.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 10.750 1.000 10.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 13.750 1.000 13.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.15, 2.30) (4.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (7.15, 2.30) (7.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (10.15, 2.30) (10.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (13.15, 2.30) (13.15, 9.30) because same wire already exists.
+Stripe generation is complete.
+<CMD> selectWire 14.0000 2.3000 14.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> undo
+<CMD> selectWire 9.0000 2.3000 9.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 13.0000 2.3000 13.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 7.0000 2.3000 7.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .3 -set_to_set_distance 6 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.3000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.750 1.000 4.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 10.750 1.000 10.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.15, 2.30) (4.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (10.15, 2.30) (10.15, 9.30) because same wire already exists.
+Stripe generation is complete.
+<CMD> selectWire 14.0000 2.3000 14.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 10.0000 2.3000 10.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 4.0000 2.3000 4.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .3 -set_to_set_distance 5 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.3000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.750 1.000 4.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 9.750 1.000 9.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 14.750 1.000 14.750 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 3 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        3       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .2 -set_to_set_distance 5 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.2000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.650 1.000 4.650 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 9.650 1.000 9.650 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 14.650 1.000 14.650 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.15, 2.30) (4.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (9.15, 2.30) (9.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (14.15, 2.30) (14.15, 9.30) because same wire already exists.
+Stripe generation is complete.
+<CMD> getIoFlowFlag
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .2 -set_to_set_distance 5 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.2000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.650 1.000 4.650 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 9.650 1.000 9.650 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 14.650 1.000 14.650 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.15, 2.30) (4.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (9.15, 2.30) (9.15, 9.30) because same wire already exists.
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (14.15, 2.30) (14.15, 9.30) because same wire already exists.
+Stripe generation is complete.
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .2 -set_to_set_distance 100 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.2000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.650 1.000 4.650 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-170):	The power planner failed to create a wire at (4.15, 2.30) (4.15, 9.30) because same wire already exists.
+Stripe generation is complete.
+<CMD> selectWire 14.0000 2.3000 14.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 9.0000 2.3000 9.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 4.0000 2.3000 4.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .2 -set_to_set_distance 100 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.2000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.650 1.000 4.650 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 1 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        1       |       NA       |
++--------+----------------+----------------+
+<CMD> selectWire 4.0000 2.3000 4.3000 9.3000 1 VDD
+<CMD> deselectAll
+<CMD> selectWire 4.0000 2.3000 4.3000 9.3000 1 VDD
+<CMD> deselectAll
+<CMD> selectWire 4.0000 2.3000 4.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .2 -number_of_sets 3 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-193):	The currently specified  spacing 0.2000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 4.650 1.000 4.650 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 10.250 1.000 10.250 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 15.850 1.000 15.850 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 3 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        3       |       NA       |
++--------+----------------+----------------+
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { ME1(1) AL_RDL(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { ME1(1) AL_RDL(9) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { ME1(1) AL_RDL(9) }
+*** Begin SPECIAL ROUTE on Sun Oct 17 13:35:21 2021 ***
+SPECIAL ROUTE ran on directory: /afs/iitd.ac.in/user/j/jv/jvl212382/AUG_ANIRBAN_SIM/counter
+SPECIAL ROUTE ran on machine: maxwell1 (Linux 4.9.0-4-amd64 Xeon 2.67Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 9
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 9
+srouteTopTargetLayerLimit set to 9
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2146.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table is found in the design, so the same information from the technology file will be ignored.
+Read in 18 layers, 9 routing layers, 0 overlap layer
+Read in 2165 macros, 7 used
+Read in 5 components
+  5 core components: 5 unplaced, 0 placed, 0 fixed
+Read in 5 logical pins
+Read in 5 nets
+Read in 2 special nets, 2 routed
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 6
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 4
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 2146.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 3 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Sun Oct 17 13:35:21 2021
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Sun Oct 17 13:35:21 2021
+sroute created 13 wires.
+ViaGen created 11 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        7       |       NA       |
+|   VI1  |        6       |        0       |
+|   ME2  |        3       |       NA       |
+|   VI2  |        5       |        0       |
+|   ME3  |        3       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing .5 -number_of_sets 3 -start_from left -start_offset 1 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 5.950 1.000 5.950 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 10.100 2.300 10.100 8.600 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 10.900 1.000 10.900 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 15.850 1.000 15.850 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 3 wires.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        3       |       NA       |
++--------+----------------+----------------+
+<CMD> selectWire 5.0000 2.3000 5.3000 9.3000 1 VDD
+<CMD> deselectAll
+<CMD> selectWire 5.0000 2.3000 5.3000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 14.9000 7.4500 15.2000 9.3000 1 VDD
+<CMD> deselectAll
+<CMD> selectWire 14.9000 7.4500 15.2000 9.3000 1 VDD
+<CMD> deselectAll
+<CMD> selectWire 14.9000 7.4500 15.2000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 14.9000 2.3000 15.2000 4.1500 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.7285 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+AAE DB initialization (MEM=1412.93 CPU=0:00:00.1 REAL=0:00:01.0) 
+Total number of fetched objects 9
+End delay calculation. (MEM=1899.32 CPU=0:00:00.0 REAL=0:00:01.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+*** Starting "NanoPlace(TM) placement v#2 (mem=1885.2M)" ...
+total jobs 21406
+multi thread init TemplateIndex for each ta. thread num 1
+Wait...
+*** Build Buffered Sizing Timing Model (Used Compact Buffer Set) ...(cpu=0:00:04.0 mem=1911.2M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:05.5 mem=1945.2M) ***
+No user setting net weight.
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=6 (0 fixed + 6 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=9 #term=28 #term/net=3.11, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=5
+stdCell: 6 single + 0 double + 0 multi
+Total standard cell length = 0.0166 (mm), area = 0.0000 (mm^2)
+Estimated cell power/ground rail width = 0.338 um
+Average module density = 0.692.
+Density for the design = 0.692.
+       = stdcell_area 83 sites (30 um^2) / alloc_area 120 sites (43 um^2).
+Pin Density = 0.1556.
+            = total # of pins 28 / total area 180.
+=== lastAutoLevel = 4 
+=== macro end level: 6 ===
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1988.9M
+Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1988.9M
+Iteration  3: Total net bbox = 1.247e-04 (7.85e-05 4.62e-05)
+              Est.  stn bbox = 1.257e-04 (7.90e-05 4.66e-05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1988.9M
+Active setup views:
+    worst_case
+Iteration  4: Total net bbox = 2.673e+01 (2.67e+01 7.81e-02)
+              Est.  stn bbox = 2.706e+01 (2.70e+01 7.91e-02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1988.9M
+Iteration  5: Total net bbox = 4.622e+01 (3.35e+01 1.27e+01)
+              Est.  stn bbox = 4.675e+01 (3.39e+01 1.28e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1988.9M
+Iteration  6: Total net bbox = 1.045e+02 (6.74e+01 3.71e+01)
+              Est.  stn bbox = 1.079e+02 (6.97e+01 3.82e+01)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 1988.9M
+*** cost = 1.045e+02 (6.74e+01 3.71e+01) (cpu for global=0:00:00.0) real=0:00:01.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+mod8
+Solver runtime cpu: 0:00:00.0 real: 0:00:00.0
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:01.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:08:20 mem=1959.2M) ***
+Total net bbox length = 1.045e+02 (6.741e+01 3.707e+01) (ext = 5.162e+01)
+Density distribution unevenness ratio = 0.000%
+Move report: Detail placement moves 6 insts, mean move: 0.21 um, max move: 0.72 um
+	Max move on inst (g114): (5.91, 3.36) --> (6.00, 4.00)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1959.2MB
+Summary Report:
+Instances move: 6 (out of 6 movable)
+Instances flipped: 0
+Mean displacement: 0.21 um
+Max displacement: 0.72 um (Instance: g114) (5.9145, 3.3635) -> (6, 4)
+	Length: 6 sites, height: 1 rows, site name: CORE, cell type: AN2M2R
+	Violation at original loc: Placement Blockage Violation
+Total net bbox length = 9.830e+01 (6.270e+01 3.560e+01) (ext = 5.690e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1959.2MB
+*** Finished refinePlace (0:08:20 mem=1959.2M) ***
+*** End of Placement (cpu=0:00:07.2, real=0:00:08.0, mem=1959.2M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 1 )
+Density distribution unevenness ratio = 0.000%
+*** Free Virtual Timing Model ...(mem=1959.2M)
+Starting congestion repair ...
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 127
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] Layer5 has single uniform track structure
+[NR-eGR] Layer6 has single uniform track structure
+[NR-eGR] Layer7 has single uniform track structure
+[NR-eGR] Layer8 has single uniform track structure
+[NR-eGR] Layer9 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=34 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=8  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 8 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=360  L2=400  L3=400  L4=400  L5=800  L6=800  L7=1600  L8=1600  L9=12000
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 8 net(s) in layer range [2, 9]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.140000e+01um
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] Layer1(ME1)(F) length: 0.000000e+00um, number of vias: 22
+[NR-eGR] Layer2(ME2)(V) length: 1.080000e+01um, number of vias: 25
+[NR-eGR] Layer3(ME3)(H) length: 3.160000e+01um, number of vias: 0
+[NR-eGR] Layer4(ME4)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer5(ME5)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer6(ME6)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer7(ME7)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer8(ME8)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer9(AL_RDL)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 4.240000e+01um, number of vias: 47
+End of congRepair (cpu=0:00:00.2, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:16, real = 0: 0:17, mem = 1936.0M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+*** Message Summary: 2 warning(s), 0 error(s)
+
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> selectWire 4.0000 7.4500 16.0000 7.7500 1 VDD
+<CMD> deselectAll
+<CMD> selectWire 4.0000 7.4500 16.0000 7.7500 1 VDD
+<CMD> deselectAll
+<CMD> fit
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix mod8_preCTS -outDir timingReports
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1940.8M)
+Extraction called for design 'mod8' of instances=6 and nets=11 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design mod8.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1940.812M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Total number of fetched objects 9
+End delay calculation. (MEM=2023.2 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.3 real=0:00:01.0 totSessionCpu=0:10:15 mem=2023.2M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 519.682 | 614.148 | 519.682 |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    9    |    6    |    6    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.167%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.56 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 1967.96875 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix mod8_preCTS -outDir timingReports
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or setExtractRCMode  command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+Type 'man IMPEXT-3493' for more detail.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1949.8M)
+Extraction called for design 'mod8' of instances=6 and nets=11 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design mod8.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1949.820M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+*** Calculating scaling factor for min_timing_library libraries using the default operating condition of each library.
+Total number of fetched objects 9
+End delay calculation. (MEM=2027.2 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.3 real=0:00:00.0 totSessionCpu=0:10:19 mem=2027.2M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Hold  views included:
+ best_case 
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.071  |  0.071  | 60.014  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    9    |    6    |    6    |
++--------------------+---------+---------+---------+
+
+Density: 69.167%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.6 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 1949.820312 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix mod8_postCTS -outDir timingReports
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1949.8M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+*** Calculating scaling factor for max_timing_library libraries using the default operating condition of each library.
+Total number of fetched objects 9
+End delay calculation. (MEM=2027.2 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.3 real=0:00:00.0 totSessionCpu=0:10:25 mem=2027.2M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 519.682 | 614.148 | 519.682 |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    9    |    6    |    6    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.167%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.45 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 1967.96875 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix mod8_preCTS -outDir timingReports
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or setExtractRCMode  command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+Type 'man IMPEXT-3493' for more detail.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1949.8M)
+Extraction called for design 'mod8' of instances=6 and nets=11 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design mod8.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1949.820M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+*** Calculating scaling factor for min_timing_library libraries using the default operating condition of each library.
+Total number of fetched objects 9
+End delay calculation. (MEM=2027.2 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.2 real=0:00:00.0 totSessionCpu=0:10:28 mem=2027.2M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Hold  views included:
+ best_case 
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.071  |  0.071  | 60.014  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    9    |    6    |    6    |
++--------------------+---------+---------+---------+
+
+Density: 69.167%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.58 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 1949.820312 Mbytes
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME1 -direction vertical -width .3 -spacing 0.09 -number_of_sets 3 -start_from left -start_offset 1 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-133):	The block boundary of instance 'out_reg[2]' was increased to (4.200 5.650) (8.200 7.750) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'out_reg[1]' was increased to (8.400 3.850) (12.400 5.950) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'g115' was increased to (8.600 5.650) (10.200 7.750) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'g114' was increased to (6.000 4.000) (7.200 5.950) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'g116' was increased to (4.800 4.000) (6.000 5.950) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'out_reg[0]' was increased to (11.400 5.650) (16.000 7.750) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-193):	The currently specified  spacing 0.0900 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME1 is 0.2000. If violation happens, increase the spacing to around 0.4972. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 5.150 2.300 5.150 8.600 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 5.540 1.000 5.540 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 10.305 2.300 10.305 8.600 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 10.695 1.000 10.695 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+**WARN: (IMPPP-354):	The power planner did not generate vertical stripe at 15.850 1.000 15.850 9.900 with width 0.300 either because the stripe would merge with rings, or because stripe could not be connected to any legal targets, or because stripe would break design rule. 
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 1 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   ME1  |        1       |       NA       |
++--------+----------------+----------------+
+<CMD> all_hold_analysis_views 
+<CMD> all_setup_analysis_views 
+<CMD> write_sdf  -ideal_clock_network mod8.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+*** Calculating scaling factor for max_timing_library libraries using the default operating condition of each library.
+Total number of fetched objects 9
+Total number of fetched objects 9
+End delay calculation. (MEM=2033.26 CPU=0:00:00.0 REAL=0:00:00.0)
+<CMD> write_sdf  -ideal_clock_network timinng/mod8.sdf
+**ERROR: (TCLCMD-113):	Could not open file 'timinng/mod8.sdf' to write
+
+**ERROR: (IMPSYT-6990):	<CMD> saveDesign mod5
+#- Begin Save netlist data ... (date=10/17 14:00:13, mem=2019.1M)
+Writing Binary DB to mod5.dat/mod8.v.bin ...
+#- End Save netlist data ... (date=10/17 14:00:13, total cpu=0:00:00.1, real=0:00:00.0, peak res=525.8M, current mem=2541.1M)
+#- Begin Save AAE data ... (date=10/17 14:00:13, mem=2541.1M)
+Saving AAE Data ...
+#- End Save AAE data ... (date=10/17 14:00:13, total cpu=0:00:00.1, real=0:00:00.0, peak res=525.9M, current mem=2541.1M)
+#- Begin Save clock tree data ... (date=10/17 14:00:13, mem=2541.1M)
+#- End Save clock tree data ... (date=10/17 14:00:13, total cpu=0:00:00.1, real=0:00:00.0, peak res=525.9M, current mem=2541.1M)
+Saving preference file mod5.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+#- Begin Save floorplan data ... (date=10/17 14:00:13, mem=2541.1M)
+Saving floorplan file ...
+#- End Save floorplan data ... (date=10/17 14:00:13, total cpu=0:00:00.1, real=0:00:01.0, peak res=526.9M, current mem=2541.1M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+#- Begin Save placement data ... (date=10/17 14:00:14, mem=2541.1M)
+** Saving stdCellPlacement_binary (version# 1) ...
+#- End Save placement data ... (date=10/17 14:00:14, total cpu=0:00:00.1, real=0:00:00.0, peak res=526.9M, current mem=2541.1M)
+#- Begin Save routing data ... (date=10/17 14:00:14, mem=2541.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2541.1M) ***
+#- End Save routing data ... (date=10/17 14:00:14, total cpu=0:00:00.1, real=0:00:00.0, peak res=527.9M, current mem=2541.1M)
+Saving property file mod5.dat/mod8.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2541.1M) ***
+#- Begin Save power constraints data ... (date=10/17 14:00:14, mem=2541.1M)
+#- End Save power constraints data ... (date=10/17 14:00:14, total cpu=0:00:00.1, real=0:00:00.0, peak res=527.9M, current mem=2541.1M)
+No integration constraint in the design.
+default
+default
+default
+Generated self-contained design mod5.dat
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> gui_select -rect {-2.127 12.793 26.393 -4.535}
+<CMD> deselectAll
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> gui_select -next -point {33.4375 11.5645}
+<CMD> selectWire 1.0000 9.9000 19.0000 10.6000 1 VSS
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer AL_RDL -stacked_via_bottom_layer ME1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe will allow jog to connect padcore ring and block ring.
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+AddStripe segment minimum length set to 1
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {VDD VSS} -layer ME2 -direction vertical -width .3 -spacing 0.09 -number_of_sets 3 -start_from left -start_offset 1 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit AL_RDL -padcore_ring_bottom_layer_limit ME1 -block_ring_top_layer_limit AL_RDL -block_ring_bottom_layer_limit ME1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+
+**WARN: (IMPPP-136):	The currently specified  spacing 0.0900 in -spacing option is less than the required spacing 0.1000 for widths specified as 0.3000 and 0.3000.
+**WARN: (IMPPP-193):	The currently specified  spacing 0.0900 in -spacing option might create min enclosed area violation. The required min enclosed area for layer ME2 is 0.1100. If violation happens, increase the spacing to around 0.3817. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: ME2 & ME1 at (15.31, 2.30) (15.50, 3.00)
+**WARN: (IMPPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: ME2 & ME1 at (15.31, 2.30) (15.61, 3.00)
+**WARN: (IMPPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: ME2 & ME1 at (15.31, 8.60) (15.50, 9.30)
+Stripe generation is complete.
+vias are now being generated.
+**WARN: (IMPPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: ME2 & ME1 at (15.31, 2.30) (15.50, 9.30)
+**WARN: (IMPPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: ME2 & ME1 at (15.31, 2.30) (15.61, 4.15)
+addStripe created 8 wires.
+ViaGen created 21 vias, deleted 2 vias to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   VI1  |       18       |        1       |
+|   ME2  |        8       |       NA       |
+|   VI2  |        3       |        1       |
++--------+----------------+----------------+
+<CMD> deselectAll
+<CMD> selectWire 15.2000 2.3000 15.5000 9.3000 1 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> saveDesign mod5
+#- Begin Save netlist data ... (date=10/17 19:14:25, mem=1991.1M)
+Writing Binary DB to mod5.dat.tmp/mod8.v.bin ...
+#- End Save netlist data ... (date=10/17 19:14:26, total cpu=0:00:00.1, real=0:00:01.0, peak res=508.3M, current mem=2506.1M)
+#- Begin Save AAE data ... (date=10/17 19:14:26, mem=2506.1M)
+Saving AAE Data ...
+#- End Save AAE data ... (date=10/17 19:14:26, total cpu=0:00:00.1, real=0:00:00.0, peak res=508.3M, current mem=2506.1M)
+#- Begin Save clock tree data ... (date=10/17 19:14:26, mem=2506.1M)
+#- End Save clock tree data ... (date=10/17 19:14:26, total cpu=0:00:00.1, real=0:00:00.0, peak res=508.3M, current mem=2506.1M)
+Saving preference file mod5.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+#- Begin Save floorplan data ... (date=10/17 19:14:26, mem=2506.1M)
+Saving floorplan file ...
+#- End Save floorplan data ... (date=10/17 19:14:26, total cpu=0:00:00.1, real=0:00:00.0, peak res=508.3M, current mem=2506.1M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+#- Begin Save placement data ... (date=10/17 19:14:26, mem=2506.1M)
+** Saving stdCellPlacement_binary (version# 1) ...
+#- End Save placement data ... (date=10/17 19:14:27, total cpu=0:00:00.1, real=0:00:01.0, peak res=508.3M, current mem=2506.1M)
+#- Begin Save routing data ... (date=10/17 19:14:27, mem=2506.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2506.1M) ***
+#- End Save routing data ... (date=10/17 19:14:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=509.3M, current mem=2506.1M)
+Saving property file mod5.dat.tmp/mod8.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2506.1M) ***
+#- Begin Save power constraints data ... (date=10/17 19:14:27, mem=2506.1M)
+#- End Save power constraints data ... (date=10/17 19:14:27, total cpu=0:00:00.1, real=0:00:00.0, peak res=509.3M, current mem=2506.1M)
+No integration constraint in the design.
+default
+default
+default
+Generated self-contained design mod5.dat.tmp
+*** Message Summary: 0 warning(s), 0 error(s)
+
+best_case worst_case
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -analysis_view worst_case -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+couldn't read file "power.tcl": no such file or directory
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//mod8.rpt
+
+Power Net Detected:
+    Voltage	    Name
+    0.00V	    VSS
+    0.00V	    VDD
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Total number of fetched objects 9
+End delay calculation. (MEM=2081.06 CPU=0:00:00.0 REAL=0:00:00.0)
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    0.00V	    VDD
+
+Warning:
+  There are 2 power/gnd nets that are not connected
+VSS VDD ...
+Use 'globalNetConnect' to define rail connections.
+[PowermeterNetlistLib::InfoMergingRails]
+** WARN:  (VOLTUS_POWR-2035): There are 2 power/gnd nets that are not connected
+VSS VDD ...
+Use 'globalNetConnect' to define rail connections.
+
+
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1110.23MB/1110.23MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(1.53846MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1110.23MB/1110.23MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1110.23MB/1110.23MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT)
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 17%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 33%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 50%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 67%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 83%
+
+Finished Levelizing
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT)
+
+Starting Activity Propagation
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT)
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 10%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 20%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 30%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 40%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 50%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 60%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 70%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 80%
+
+Finished Activity Propagation
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total)=1110.55MB/1110.55MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT)
+ ... Calculating switching power
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 10%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 20%
+  instance \out_reg[2]  is not connected to any rail
+  instance \out_reg[1]  is not connected to any rail
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 30%
+  instance \out_reg[0]  is not connected to any rail
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 40%
+  instance g114 is not connected to any rail
+  instance \out_reg[0]  is not connected to any rail
+  only first five unconnected instances are listed...
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 50%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 60%
+ ... Calculating internal and leakage power
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 70%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 80%
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT): 90%
+
+Finished Calculating power
+2021-Oct-17 19:18:53 (2021-Oct-17 13:48:53 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1110.92MB/1110.92MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1110.92MB/1110.92MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:01, mem(process/total)=1110.92MB/1110.92MB)
+
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.00002465 	   76.2056%
+Total Switching Power:       0.00000202 	    6.2415%
+Total Leakage Power:         0.00000568 	   17.5529%
+Total Power:                 0.00003235
+-----------------------------------------------------------------------------------------
+** WARN:  (VOLTUS_POWR-2041): There are some instances in the design which are not connected to any power or ground nets.
+These instances will be added to default power/ground rail uti files.
+Use 'itaputil list <uti-file>' command to get the list of instances.
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=1111.04MB/1111.04MB)
+
+Begin Creating Binary Database
+Ended Creating Binary Database: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=1111.27MB/1111.27MB)
+
+Output file is .//mod8.rpt.
+<CMD> write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge  -setuphold split > delays.sdf
+
+Usage: write_sdf [-help] <file_name> [-abstracted_model]
+                 [-adjust_setuphold_for_zero_hold_slack] [-base_delay]
+                 [-celltiming {all none nochecks}] [-collapse_internal_pins]
+                 [-condelse] [-delimiter <char>] [-delta_delay]
+                 [-edges {edged library noedge check_edge}]
+                 [-exclude_cells <cell_list>] [-exclude_disabled_arcs]
+                 [-exclude_disabled_modes] [-exclude_whatif_arcs] [-filter]
+                 [-ideal_clock_network]
+                 [-interconn {all none noport noinport nooutport}]
+                 [-map_file {file1 file2 ...}] [-max_view <viewName>]
+                 [-merge_arcs] [-min_period_edges {posedge negedge both none}]
+                 [-min_view <viewName>] [-no_condition] [-no_derate]
+                 [-no_escape] [-nonegchecks] [-precision <non_neg_integer>]
+                 [-process <string>] [-recompute_parallel_arcs]
+                 [-recrem {merge_always split merge_when_paired}] [-remashold]
+                 [-resort_values_min_to_max] [-scale <float>]
+                 [-setuphold {merge_always split merge_when_paired}]
+                 [-splitrecrem] [-splitsetuphold]
+                 [-target_application {sta verilog}] [-temperature <string>]
+                 [-timingcheck {order}] [-transform_out_to_out_arcs]
+                 [-typ_view <viewName>] [-version {2.1 3.0}] [-view <viewName>]
+                 [-voltage <string>]
+
+**ERROR: (IMPTCM-46):	Argument "file_name" is required for command "write_sdf", either this option is not specified or an option prior to it is not specified correctly.
+
+<CMD> create_ccopt_clock_tree_spec
+Creating clock tree spec for modes (timing configs): counter_cons
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Ignoring AAE DB Resetting ...
+Analyzing clock structure...
+Analyzing clock structure done.
+Reset timing graph...
+Ignoring AAE DB Resetting ...
+Reset timing graph done.
+Extracting original clock gating for clk...
+  clock_tree clk contains 3 sinks and 0 clock gates.
+  Extraction for clk complete.
+Extracting original clock gating for clk done.
+Checking clock tree convergence...
+Checking clock tree convergence done.
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix mod8_postCTS -outDir timingReports
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1999.2M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Total number of fetched objects 9
+End delay calculation. (MEM=2082.57 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.2 real=0:00:01.0 totSessionCpu=1:21:53 mem=2082.6M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 519.682 | 614.148 | 519.682 |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    9    |    6    |    6    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.167%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.38 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 2023.335938 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix mod8_postCTS -outDir timingReports
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or setExtractRCMode  command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+Type 'man IMPEXT-3493' for more detail.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1999.2M)
+Extraction called for design 'mod8' of instances=6 and nets=11 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design mod8.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1999.156M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+*** Calculating scaling factor for min_timing_library libraries using the default operating condition of each library.
+Total number of fetched objects 9
+End delay calculation. (MEM=2081.06 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.3 real=0:00:00.0 totSessionCpu=1:22:00 mem=2081.1M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Hold  views included:
+ best_case 
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.071  |  0.071  | 60.014  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    9    |    6    |    6    |
++--------------------+---------+---------+---------+
+
+Density: 69.167%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.63 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 1999.15625 Mbytes
+<CMD> getCTSMode -engine -quiet
+<CMD> ctd_win -id ctd_window
+Creating channel graph for ccopt_3_9...
+Creating channel graph for ccopt_3_9 done.
+Creating channel graph for ccopt_3_4_available_3_9...
+Creating channel graph for ccopt_3_4_available_3_9 done.
+Rebuilding timing graph...
+Rebuilding timing graph done.
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> deselectAll
+<CMD> getCTSMode -engine -quiet
+<CMD> uiSetTool ruler
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> setOptMode -fixCap true -fixTran true -fixFanoutLoad false
+<CMD> optDesign -preCTS
+**WARN: (IMPOPT-576):	5 nets have unplaced terms. 
+Type 'man IMPOPT-576' for more detail.
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+GigaOpt running with 1 threads.
+**WARN: (IMPOPT-665):	clk : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	rst : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	out[2] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	out[1] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**WARN: (IMPOPT-665):	out[0] : Net has unplaced terms or is connected to uplaced instances in design. 
+Type 'man IMPOPT-665' for more detail.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 2085.2M, totSessionCpu=1:22:38 **
+Added -handlePreroute to trialRouteMode
+*** optDesign -preCTS ***
+DRC Margin: user margin 0.0; extra margin 0.2
+Setup Target Slack: user slack 0; extra slack 0.1
+Hold Target Slack: user slack 0
+No user sequential activity specified, applying default sequential activity of "0.2" for Dynamic Power reporting.
+'set_default_switching_activity' finished successfully.
+**WARN: (IMPOPT-3195):	Analysis mode has changed.
+Type 'man IMPOPT-3195' for more detail.
+Include MVT Delays for Hold Opt
+Multi-VT timing optimization disabled based on library information.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=2085.2M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+*** Calculating scaling factor for max_timing_library libraries using the default operating condition of each library.
+Total number of fetched objects 9
+End delay calculation. (MEM=2156.56 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.2 real=0:00:01.0 totSessionCpu=1:22:39 mem=2156.6M)
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| 519.682 |
+|           TNS (ns):|  0.000  |
+|    Violating Paths:|    0    |
+|          All Paths:|    9    |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.167%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:01, real = 0:00:01, mem = 2092.5M, totSessionCpu=1:22:39 **
+** INFO : this run is activating medium effort placeOptDesign flow
+*** Starting optimizing excluded clock nets MEM= 2092.5M) ***
+*info: No excluded clock nets to be optimized.
+*** Finished optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 2092.5M) ***
+The useful skew maximum allowed delay is: 0.3
+Info: 1 clock net  excluded from IPO operation.
+*info: There are 23 candidate Buffer cells
+*info: There are 20 candidate Inverter cells
+
+Netlist preparation processing... 
+Removed 0 instance
+*info: Marking 0 isolation instances dont touch
+*info: Marking 0 level shifter instances dont touch
+Begin: GigaOpt Global Optimization
+*info: use new DP (enabled)
+Info: 1 clock net  excluded from IPO operation.
+*info: 1 clock net excluded
+*info: 2 special nets excluded.
+*info: 2 no-driver nets excluded.
+** GigaOpt Global Opt WNS Slack 0.000  TNS Slack 0.000 
++--------+--------+----------+------------+--------+----------+---------+---------------+
+|  WNS   |  TNS   | Density  |    Real    |  Mem   |Worst View|Pathgroup|   End Point   |
++--------+--------+----------+------------+--------+----------+---------+---------------+
+|   0.000|   0.000|    69.17%|   0:00:00.0| 2248.9M|worst_case|       NA| NA            |
++--------+--------+----------+------------+--------+----------+---------+---------------+
+
+*** Finish pre-CTS Global Setup Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=2248.9M) ***
+
+*** Finish pre-CTS Setup Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=2248.9M) ***
+**** Begin NDR-Layer Usage Statistics ****
+0 Ndr or Layer constraints added by optimization 
+**** End NDR-Layer Usage Statistics ****
+** GigaOpt Global Opt End WNS Slack 0.000  TNS Slack 0.000 
+End: GigaOpt Global Optimization
+
+Active setup views:
+ worst_case
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+*** Timing Is met
+*** Check timing (0:00:00.0)
+Info: 1 clock net  excluded from IPO operation.
+setup target slack: 0.1
+extra slack: 0.1
+std delay: 0.0404
+real setup target slack: 0.0404
+[NR-eGR] Started earlyGlobalRoute kernel
+[NR-eGR] Initial Peak syMemory usage = 2087.4 MB
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 127
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] Layer5 has single uniform track structure
+[NR-eGR] Layer6 has single uniform track structure
+[NR-eGR] Layer7 has single uniform track structure
+[NR-eGR] Layer8 has single uniform track structure
+[NR-eGR] Layer9 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=63 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=8  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 8 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=360  L2=400  L3=400  L4=400  L5=800  L6=800  L7=1600  L8=1600  L9=12000
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 8 net(s) in layer range [2, 9]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.140000e+01um
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] End Peak syMemory usage = 2087.4 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.02 seconds
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+*** Starting refinePlace (1:22:58 mem=2087.4M) ***
+**WARN: (IMPSP-5140):	Global net connect rules have not been created. Added  insts would have no supply connectivity, and would fail DRC.
+Type 'man IMPSP-5140' for more detail.
+**WARN: (IMPSP-315):	Found 6 instances insts with no PG Term connections.
+Type 'man IMPSP-315' for more detail.
+Density distribution unevenness ratio = 0.000%
+incr SKP is on..., with optDC mode
+total jobs 21406
+multi thread init TemplateIndex for each ta. thread num 1
+(cpu=0:00:04.1 mem=2102.7M) ***
+total jobs 0 -> 19056
+multi thread init TemplateIndex for each ta. thread num 1
+finished multi-thread init
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:05.8 mem=2138.7M) ***
+Iteration  6: Total net bbox = 5.185e+01 (4.07e+01 1.11e+01)
+              Est.  stn bbox = 5.226e+01 (4.10e+01 1.12e+01)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 2385.7M
+Density distribution unevenness ratio = 0.000%
+Move report: Timing Driven Placement moves 6 insts, mean move: 4.37 um, max move: 9.20 um
+	Max move on inst (out_reg[2]): (4.20, 5.80) --> (11.60, 4.00)
+	Runtime: CPU: 0:00:07.4 REAL: 0:00:08.0 MEM: 2385.7MB
+Density distribution unevenness ratio = 0.000%
+Move report: Detail placement moves 6 insts, mean move: 2.17 um, max move: 5.20 um
+	Max move on inst (g116): (9.60, 4.00) --> (4.40, 4.00)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2385.7MB
+Summary Report:
+Instances move: 6 (out of 6 movable)
+Instances flipped: 0
+Mean displacement: 2.80 um
+Max displacement: 8.80 um (Instance: out_reg[2]) (4.2, 5.8) -> (11.2, 4)
+	Length: 20 sites, height: 1 rows, site name: CORE, cell type: DFQZRM2RA
+Runtime: CPU: 0:00:07.4 REAL: 0:00:08.0 MEM: 2385.7MB
+*** Finished refinePlace (1:23:05 mem=2385.7M) ***
+Density distribution unevenness ratio = 0.000%
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+Trial Route Overflow 0(H) 0(V)
+Starting congestion repair ...
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 127
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] Layer5 has single uniform track structure
+[NR-eGR] Layer6 has single uniform track structure
+[NR-eGR] Layer7 has single uniform track structure
+[NR-eGR] Layer8 has single uniform track structure
+[NR-eGR] Layer9 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=63 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=8  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 8 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=360  L2=400  L3=400  L4=400  L5=800  L6=800  L7=1600  L8=1600  L9=12000
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 8 net(s) in layer range [2, 9]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 5.220000e+01um
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] Layer1(ME1)(F) length: 0.000000e+00um, number of vias: 22
+[NR-eGR] Layer2(ME2)(V) length: 1.140000e+01um, number of vias: 23
+[NR-eGR] Layer3(ME3)(H) length: 4.020000e+01um, number of vias: 0
+[NR-eGR] Layer4(ME4)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer5(ME5)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer6(ME6)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer7(ME7)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer8(ME8)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer9(AL_RDL)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 5.160000e+01um, number of vias: 45
+End of congRepair (cpu=0:00:00.1, real=0:00:00.0)
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=2362.2M)
+Extraction called for design 'mod8' of instances=6 and nets=11 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design mod8.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 2362.242M)
+Compute RC Scale Done ...
+**optDesign ... cpu = 0:00:28, real = 0:00:28, mem = 2362.2M, totSessionCpu=1:23:06 **
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Total number of fetched objects 9
+End delay calculation. (MEM=2451.4 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Timing Is met
+*** Check timing (0:00:00.0)
+*** Timing Is met
+*** Check timing (0:00:00.0)
+Info: 1 clock net  excluded from IPO operation.
+Begin: Area Reclaim Optimization
+Reclaim Optimization WNS Slack 0.000  TNS Slack 0.000 Density 69.17
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    69.17%|        -|   0.000|   0.000|   0:00:00.0| 2547.7M|
+|    69.17%|        0|   0.000|   0.000|   0:00:00.0| 2547.7M|
+|    69.17%|        0|   0.000|   0.000|   0:00:00.0| 2547.7M|
+|    69.17%|        0|   0.000|   0.000|   0:00:00.0| 2547.7M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack 0.000  TNS Slack 0.000 Density 69.17
+**** Begin NDR-Layer Usage Statistics ****
+0 Ndr or Layer constraints added by optimization 
+**** End NDR-Layer Usage Statistics ****
+** Finished Core Area Reclaim Optimization (cpu = 0:00:02.7) (real = 0:00:03.0) **
+*** Starting refinePlace (1:23:09 mem=2547.7M) ***
+Total net bbox length = 1.085e+02 (7.370e+01 3.480e+01) (ext = 5.870e+01)
+**WARN: (IMPSP-5140):	Global net connect rules have not been created. Added  insts would have no supply connectivity, and would fail DRC.
+Type 'man IMPSP-5140' for more detail.
+**WARN: (IMPSP-315):	Found 6 instances insts with no PG Term connections.
+Type 'man IMPSP-315' for more detail.
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2547.7MB
+Summary Report:
+Instances move: 0 (out of 6 movable)
+Instances flipped: 0
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 1.085e+02 (7.370e+01 3.480e+01) (ext = 5.870e+01)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 2547.7MB
+*** Finished refinePlace (1:23:09 mem=2547.7M) ***
+*** maximum move = 0.00 um ***
+*** Finished re-routing un-routed nets (2547.7M) ***
+
+*** Finish Physical Update (cpu=0:00:00.1 real=0:00:00.0 mem=2547.7M) ***
+*** Finished Area Reclaim Optimization (cpu=0:00:03, real=0:00:03, mem=2398.18M, totSessionCpu=1:23:09).
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 127
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] Layer5 has single uniform track structure
+[NR-eGR] Layer6 has single uniform track structure
+[NR-eGR] Layer7 has single uniform track structure
+[NR-eGR] Layer8 has single uniform track structure
+[NR-eGR] Layer9 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=63 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=8  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 8 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=360  L2=400  L3=400  L4=400  L5=800  L6=800  L7=1600  L8=1600  L9=12000
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 8 net(s) in layer range [2, 9]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 5.220000e+01um
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] Layer1(ME1)(F) length: 0.000000e+00um, number of vias: 22
+[NR-eGR] Layer2(ME2)(V) length: 1.140000e+01um, number of vias: 23
+[NR-eGR] Layer3(ME3)(H) length: 4.020000e+01um, number of vias: 0
+[NR-eGR] Layer4(ME4)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer5(ME5)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer6(ME6)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer7(ME7)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer8(ME8)(V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Layer9(AL_RDL)(H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 5.160000e+01um, number of vias: 45
+[NR-eGR] End Peak syMemory usage = 2375.5 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.05 seconds
+Extraction called for design 'mod8' of instances=6 and nets=11 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design mod8.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 2375.508M)
+Compute RC Scale Done ...
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Total number of fetched objects 9
+End delay calculation. (MEM=2465.95 CPU=0:00:00.0 REAL=0:00:00.0)
+Begin: GigaOpt postEco DRV Optimization
+Info: 1 clock net  excluded from IPO operation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      max-tran                  |      max-cap                   |     max-fanout    |     max-length    |       |           |           |           |         |            |           |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |    wViol   |  nets   |  terms  |    wViol   |  nets   |  terms  |  nets   |  terms  |  WNS  |  #Buffer  | #Inverter |  #Resize  | Density |    Real    |    Mem    |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|     0   |     0   |     0.00   |     0   |      0  |     0.00   |     0   |     0   |     0   |     0   | 519.68 |          0|          0|          0|  69.17  |            |           |
+|     0   |     0   |     0.00   |     0   |      0  |     0.00   |     0   |     0   |     0   |     0   | 519.68 |          0|          0|          0|  69.17  |   0:00:00.0|    2542.3M|
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+**** Begin NDR-Layer Usage Statistics ****
+0 Ndr or Layer constraints added by optimization 
+**** End NDR-Layer Usage Statistics ****
+
+*** Finish DRV Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=2542.3M) ***
+
+End: GigaOpt postEco DRV Optimization
+*** Steiner Routed Nets: 11.111%; Threshold: 100; Threshold for Hold: 100
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=2523.2M)
+Compute RC Scale Done ...
+doiPBLastSyncSlave
+Extraction called for design 'mod8' of instances=6 and nets=11 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design mod8.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 0.90000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Creating RPSQ from WeeR and WRes ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 2376.516M)
+Skewing Data Summary (End_of_FINAL)
+--------------------------------------------------
+ Total skewed count:0
+--------------------------------------------------
+[NR-eGR] Started earlyGlobalRoute kernel
+[NR-eGR] Initial Peak syMemory usage = 2383.8 MB
+[NR-eGR] honorMsvRouteConstraint: false
+[NR-eGR] honorClockSpecNDR      : 0
+[NR-eGR] minRouteLayer          : 2
+[NR-eGR] maxRouteLayer          : 127
+[NR-eGR] numTracksPerClockWire  : 0
+[NR-eGR] Layer1 has no routable track
+[NR-eGR] Layer2 has single uniform track structure
+[NR-eGR] Layer3 has single uniform track structure
+[NR-eGR] Layer4 has single uniform track structure
+[NR-eGR] Layer5 has single uniform track structure
+[NR-eGR] Layer6 has single uniform track structure
+[NR-eGR] Layer7 has single uniform track structure
+[NR-eGR] Layer8 has single uniform track structure
+[NR-eGR] Layer9 has single uniform track structure
+[NR-eGR] numRoutingBlks=0 numInstBlks=0 numPGBlocks=63 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eGR] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eGR] Read numTotalNets=8  numIgnoredNets=0
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id 0. Nets 8 
+[NR-eGR] id=0  ndrTrackId=0  ndrViaId=-1  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eGR] Pitch:  L1=360  L2=400  L3=400  L4=400  L5=800  L6=800  L7=1600  L8=1600  L9=12000
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 8 net(s) in layer range [2, 9]
+[NR-eGR] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 5.220000e+01um
+[NR-eGR] 
+[NR-eGR] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eGR] End Peak syMemory usage = 2383.8 MB
+[NR-eGR] Early Global Router Kernel+IO runtime : 0.02 seconds
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Total number of fetched objects 9
+End delay calculation. (MEM=2455.16 CPU=0:00:00.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.2 real=0:00:01.0 totSessionCpu=1:23:11 mem=2455.2M)
+Reported timing to dir ./timingReports
+**optDesign ... cpu = 0:00:33, real = 0:00:34, mem = 2399.9M, totSessionCpu=1:23:11 **
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 519.684 | 614.119 | 519.684 |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    9    |    6    |    6    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.167%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:33, real = 0:00:34, mem = 2397.9M, totSessionCpu=1:23:11 **
+**WARN: (IMPOPT-3195):	Analysis mode has changed.
+Type 'man IMPOPT-3195' for more detail.
+*** Finished optDesign ***
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix mod8_preCTS -outDir timingReports
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=2334.1M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 519.684 | 614.119 | 519.684 |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|    9    |    6    |    6    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 69.167%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.18 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 2334.101562 Mbytes
+<CMD> write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge  -setuphold split > delay2.sdf
+
+Usage: write_sdf [-help] <file_name> [-abstracted_model]
+                 [-adjust_setuphold_for_zero_hold_slack] [-base_delay]
+                 [-celltiming {all none nochecks}] [-collapse_internal_pins]
+                 [-condelse] [-delimiter <char>] [-delta_delay]
+                 [-edges {edged library noedge check_edge}]
+                 [-exclude_cells <cell_list>] [-exclude_disabled_arcs]
+                 [-exclude_disabled_modes] [-exclude_whatif_arcs] [-filter]
+                 [-ideal_clock_network]
+                 [-interconn {all none noport noinport nooutport}]
+                 [-map_file {file1 file2 ...}] [-max_view <viewName>]
+                 [-merge_arcs] [-min_period_edges {posedge negedge both none}]
+                 [-min_view <viewName>] [-no_condition] [-no_derate]
+                 [-no_escape] [-nonegchecks] [-precision <non_neg_integer>]
+                 [-process <string>] [-recompute_parallel_arcs]
+                 [-recrem {merge_always split merge_when_paired}] [-remashold]
+                 [-resort_values_min_to_max] [-scale <float>]
+                 [-setuphold {merge_always split merge_when_paired}]
+                 [-splitrecrem] [-splitsetuphold]
+                 [-target_application {sta verilog}] [-temperature <string>]
+                 [-timingcheck {order}] [-transform_out_to_out_arcs]
+                 [-typ_view <viewName>] [-version {2.1 3.0}] [-view <viewName>]
+                 [-voltage <string>]
+
+**ERROR: (IMPTCM-46):	Argument "file_name" is required for command "write_sdf", either this option is not specified or an option prior to it is not specified correctly.
+
+<CMD> write_sdf -view worst_case  -ideal_clock_network timinng/mod8.sdf
+**ERROR: (TCLCMD-113):	Could not open file 'timinng/mod8.sdf' to write
+
+**ERROR: (IMPSYT-6990):	<CMD> write_sdf -view worst_case  -ideal_clock_network timing
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mod8
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Total number of fetched objects 9
+Total number of fetched objects 9
+End delay calculation. (MEM=2396.38 CPU=0:00:00.0 REAL=0:00:00.0)
+                                <CMD> getMultiCpuUsage -localCpu
+<CMD> get_verify_drc_mode -disable_rules -quiet
+<CMD> get_verify_drc_mode -quiet -area
+<CMD> get_verify_drc_mode -quiet -layer_range
+<CMD> get_verify_drc_mode -check_implant -quiet
+<CMD> get_verify_drc_mode -check_implant_across_rows -quiet
+<CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+<CMD> get_verify_drc_mode -check_only -quiet
+<CMD> get_verify_drc_mode -check_same_via_cell -quiet
+<CMD> get_verify_drc_mode -exclude_pg_net -quiet
+<CMD> get_verify_drc_mode -ignore_trial_route -quiet
+<CMD> get_verify_drc_mode -max_wrong_wa
